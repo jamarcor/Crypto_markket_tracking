@@ -20,35 +20,31 @@
     <main>
         <div class="px-4 py-5 my-5 text-center">
             <h1 class="display-6 fw-bold">Crypto Currency Market Tracking</h1>
-            <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle mt-4 mb-4" href="#" role="button" id="dropdownMenuLink"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Bitcoin
-                </a>
-
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href="#" id="Bitcoin">Bitcoin</a></li>
-                    <li><a class="dropdown-item" href="#" id="Ethereum">Ethereum</a></li>
-                    <li><a class="dropdown-item" href="#" id="Binance">Binance Coin</a></li>
-                    <li><a class="dropdown-item" href="#" id="Shiba">Shiba Inu</a></li>
-                    <li><a class="dropdown-item" href="#" id="Doge">Dogecoin</a></li>
-                </ul>
+            <div  class="btn mx-auto text-center">
+                <select class="form-select" aria-label="Default select example" id="ticker-form">
+                    <option>Please select the crypto currency</option>
+                    <option value="BTC">BTC</option>
+                    <option value="ETH">Ethereum</option>
+                    <option value="DOGE">Dogecoin</option>
+                </select>
             </div>
+            <button id="search-btn" type="button" class="btn btn-success btn-md px-4 gap-3">Submit</button>
             <div class="col-lg-5 mx-auto">
-                <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap.</p>
+                <p class="lead mb-4"><i class="bi bi-currency-bitcoin"></i>Easily find market price for a selected cryptocurrency.</p>
                 <div>
                     <ul class="list-group">
-                        <li class="list-group-item">Open Price : <span>$65000</span></li>
-                        <li class="list-group-item">High Price: <span>$65000</span></li>
-                        <li class="list-group-item">Low Price: <span>$65000</span></li>
-                        <li class="list-group-item">Close Price: <span>$65000</span></li>
-                        <li class="list-group-item">Volume: <span>65000</span></li>
-                    </ul>                    
+                        <li id="open" class="list-group-item">Open Price : <span>$</span></li>
+                        <li id="high" class="list-group-item">High Price: <span>$</span></li>
+                        <li id="low" class="list-group-item">Low Price: <span>$</span></li>
+                        <li id="close" class="list-group-item">Close Price: <span>$</span></li>
+                        <li id="volume" class="list-group-item">Volume: <span>0</span></li>
+                    </ul>
                 </div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3 mt-4">Search</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4 mt-4">Saved <i class="bi bi-star-fill"></i> </button>
                     
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4 mt-4">saved <i
+                            class="bi bi-star-fill"></i> </button>
+
                 </div>
             </div>
         </div>
